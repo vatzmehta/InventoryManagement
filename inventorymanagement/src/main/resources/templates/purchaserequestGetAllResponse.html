@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Approved purchase requests</title>
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<a href="/">Home</a>
+<h1>Approved Purchase request</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Request ID</th>
+        <th>ApprovedQuantity</th>
+        <th>AddedToInventory</th>
+        <th>ApprovedByUserName</th>
+        <th>Approved on</th>
+    </tr>
+    <div th:each="entry : *{requests}">
+        <tr>
+            <td><p th:text = "${entry.id}"></p></td>
+            <td><p th:text = "${entry.requestId}"></p></td>
+            <td><p th:text="${entry.approvedQuantity}"></p></td>
+            <td><p th:text="${entry.addedToInventory}"></p></td>
+            <td><p th:text="${entry.approvedByUserName}"></p></td>
+            <td><p th:text="${entry.approvalDate}"></p></td>
+        </tr>
+    </div>
+</table>
+
+</body>
+</html>

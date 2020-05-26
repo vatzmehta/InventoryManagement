@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Approved </title>
+</head>
+<body>
+<a href="/">Home</a><!DOCTYPE HTML>
+<h1>Approved</h1>
+<p th:text="'id = '+ ${approve.id}" />
+<p th:text="'Quantity = '+ ${approve.approvedQuantity}" />
+<a href="/request/approveRequest">Submit another</a>
+<a href="/request/approved/getAll">Get All Approved</a>
+</body>
+</html>

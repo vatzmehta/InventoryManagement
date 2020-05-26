@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Find Class Deployed Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Deployed Class Inventory</h1>
+<form action="#" th:action="@{/class/deployed}" th:object="${classDao}" method="post">
+    <p> ClassName: <input type="text" th:field="*{className}" required/></p>
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

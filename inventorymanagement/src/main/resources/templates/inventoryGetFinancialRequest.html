@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Get Financial</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Get Financial</h1>
+<form action="#" th:action="@{/inventory/financial/get}" th:object="${financialRequestDao}" method="post">
+    <p> From Date: <input type="date" th:field="*{fromDate}" required/></p>
+    <p> To Date: <input type="date" th:field="*{toDate}" required/></p>
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

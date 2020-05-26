@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<script language="JavaScript" type="text/javascript">
+    function deleteInventory(){
+    var ask = window.confirm("Are you sure you want to delete Inventory with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/inventory/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    function deleteClass(){
+     var ask = window.confirm("Are you sure you want to delete Class with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/class/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    function deleteInventoryType(){
+     var ask = window.confirm("Are you sure you want to delete Inventory Type with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/inventory/type/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    function deleteStatus(){
+     var ask = window.confirm("Are you sure you want to delete Status with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/status/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    function deleteApprovedRequest(){
+     var ask = window.confirm("Are you sure you want to delete Purchase Request with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/request/approved/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    function deleteRequest(){
+     var ask = window.confirm("Are you sure you want to delete New Inventory Request with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/request/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    function deletePaymentMethod(){
+     var ask = window.confirm("Are you sure you want to delete Payment Method with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/payment/method/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    function deletePaymentStatus(){
+     var ask = window.confirm("Are you sure you want to delete Payment Status with Id: " + document.getElementById("id").value);
+    if(ask){
+    var url = '/payment/status/deleteById?id=' + document.getElementById("id").value;
+    window.location = url;
+    }
+    }
+    </script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Delete By Id</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Delete by Id</h1>
+<form action="#" th:action="@{/class/update}" th:object="${classDao}" method="post">
+    <p> Id: <input type="number" id="id" name="id" value=""required> </p>
+    <br>
+    <input type="button" value="DeleteInventory" onclick="deleteInventory()" />
+    <br/>
+    <input type="button" value="DeleteClass" onclick="deleteClass()" />
+    <br/>
+    <input type="button" value="DeleteInventoryType" onclick="deleteInventoryType()" />
+    <br/>
+    <input type="button" value="DeleteStatus" onclick="deleteStatus()" />
+    <br/>
+    <input type="button" value="DeletePurchaseOrder" onclick="deleteApprovedRequest()" />
+    <br/>
+    <input type="button" value="DeleteRequestedInventory" onclick="deleteRequest()" />
+    <br/>
+    <input type="button" value="DeletePaymentMethod" onclick="deletePaymentMethod()" />
+    <br/>
+    <input type="button" value="DeletePaymentStatus" onclick="deletePaymentStatus()" />
+
+    
+    
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

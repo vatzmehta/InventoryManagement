@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Update Payment Method</title>
+</head>
+<script language="JavaScript" type="text/javascript">
+    function defaultKeys(){
+    let url = window.location.href;
+    let reg = new RegExp( '[?&]' + 'purchaseId' + '=([^&#]*)','i');
+    let queryString = reg.exec(url);
+    document.getElementById("purchaseId").defaultValue= queryString ? queryString[1] : null;
+    }
+    </script>
+<body>
+<a href="/">Home</a>
+<h1>Update Payment Method</h1>
+<form action="#" th:action="@{/inventory/update/paymentMethod}" th:object="${paymentInputDao}" method="post">
+    <p> Purchase Id: <input type="number" id="purchaseId" th:field="*{purchaseId}" value="" onclick="defaultKeys()" required/></p>
+    <p> Payment Method Id: <input type="number" id="id" th:field="*{id}" required/></p>
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

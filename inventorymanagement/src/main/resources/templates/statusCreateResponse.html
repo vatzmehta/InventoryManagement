@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Added Status</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Status</h1>
+<p th:text="'id = '+ ${statusDao.id}" />
+<p th:text="'name = '+ ${statusDao.name}" />
+<a href="/status/create">Submit another</a>
+<a href="/status/getAll">Get All</a>
+</body>
+</html>

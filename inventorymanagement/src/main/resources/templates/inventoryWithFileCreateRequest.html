@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Add to Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h2>Add to Inventory</h2>
+<form method="post" th:action="@{/inventory/create/withf}" enctype="multipart/form-data"  th:object="${inventoryDao}">
+    <p> SerialNumber: <input type="text" th:field="*{serialNumber}" required/></p>
+    <p> Inventory type id: <input type="number" th:field="*{inventoryTypeId}" required/></p>
+    <p> PurchaseDate: <input type="date" th:field="*{purchaseDate}" required/></p>
+    <p> WarrantyTill: <input type="date" th:field="*{warrantyTill}" required/></p>
+    <p> Price: <input type="number" min = "0" step="0.001" th:field="*{depricatedValue}" required/></p>
+<!--    <p> invoicesId: <input type="text" th:field="*{invoicesId}" /></p>-->
+    <p> StatusId: <input type="number" th:field="*{statusId}" /></p>
+    <p>Purchase Order Id (if any): <input type="number" th:field="*{purchaseRequestId}" /></p>
+    <div class="form-group">
+        Invoice File: <input type="file" name="file" class="form-control-file">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>

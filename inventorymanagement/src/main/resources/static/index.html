@@ -1,0 +1,111 @@
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>Inventory Management</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<h1>Upload Data</h1>-->
+
+<!--<form  th:action="@{/inventory/create/withf}" method="post"> &lt;!&ndash;th:object="${inventoryDao}"&ndash;&gt;-->
+<!--    <p>-->
+<!--        File: <input type="file" th:value="${file}" name="file" />-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        SerialNumber: <input type="text" th:value="${inventoryDao.serialNumber}" name="serialNumber" />-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        ManufactorerId: <input type="number" th:value="${inventoryDao.manufactorerId}" name="manufactorerId" />-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        PurchaseDate: <input type="date" th:value="${inventoryDao.purchaseDate}" name="purchaseDate" />-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        WarrantyTill: <input type="date" th:value="${inventoryDao.warrantyTill}" name="warrantyTill" />-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        DepricatedValue: <input type="number" th:value="${inventoryDao.depricatedValue}" name="depricatedValue" />-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        StatusId: <input type="number" th:value="${inventoryDao.statusId}" name="statusId" />-->
+<!--    </p>-->
+
+
+<!--    <p>-->
+<!--        <input type="submit" value="Submit"/> <input type="reset" value="Reset">-->
+<!--    </p>-->
+<!--</form>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html>&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>Invoices Upload</title>&ndash;&gt;-->
+<!--&lt;!&ndash;    <link rel="stylesheet" href="/css/main.css" />&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<noscript>&ndash;&gt;-->
+<!--&lt;!&ndash;    <h2>Sorry! Your browser doesn't support Javascript</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;</noscript>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<div class="upload-container">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="upload-header">&ndash;&gt;-->
+<!--&lt;!&ndash;        <h2>Invoices Upload!</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="upload-content">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="single-upload-with-details">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h3>Upload Single File</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <form id="singleUploadFormWithDetails" name="singleUploadForm">&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="singleFormWithDetailsFileUploadInput" type="file" name="file" class="file-input" required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="serialNumber" type="text" name="serialNumber"  required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="manufactorerId" type="number" name="manufactorerId"  required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="statusId" type="number" name="statusId" required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="depricatedValue" type="number" name="depricatedValue" required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="purchaseDate" type="date" name="purchaseDate" required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="warrantyTill" type="date" name="warrantyTill" required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <button type="submit" class="primary submit-btn">Submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            </form>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="upload-response">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div id="singleFormWithDetailsFileUploadError"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div id="singleFormWithDetailsFileUploadSuccess"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="single-upload">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h3>Upload Single File</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <form id="singleUploadForm" name="singleUploadForm">&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <button type="submit" class="primary submit-btn">Submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            </form>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="upload-response">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div id="singleFileUploadError"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div id="singleFileUploadSuccess"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="multiple-upload">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h3>Upload Multiple Files</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <form id="multipleUploadForm" name="multipleUploadForm">&ndash;&gt;-->
+<!--&lt;!&ndash;                <input id="multipleFileUploadInput" type="file" name="files" class="file-input" multiple required />&ndash;&gt;-->
+<!--&lt;!&ndash;                <button type="submit" class="primary submit-btn">Submit</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            </form>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="upload-response">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div id="multipleFileUploadError"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div id="multipleFileUploadSuccess"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="/js/main.js" ></script>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->

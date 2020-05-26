@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Create Payment Status</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Create Payment Status</h1>
+<form action="#" th:action="@{/payment/status/create}" th:object="${paymentStatusDao}" method="post">
+    <p> Status Name: <input type="text" th:field="*{name}" required/></p>
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

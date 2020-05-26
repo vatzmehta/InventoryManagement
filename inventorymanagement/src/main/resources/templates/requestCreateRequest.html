@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Request Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Request Inventory</h1>
+<form action="#" th:action="@{/request/create}" th:object="${requestNewInventoryDao}" method="post">
+    <p> InventoryTypeId: <input type="number" th:field="*{inventoryTypeId}" required/></p>
+    <p> Quantity: <input type="number" min="0" th:field="*{quantity}" required/></p>
+    <p> RequestingClassName: <input type="text" th:field="*{requestingClassName}" required/></p>
+    <p> Reason: <input type="text" th:field="*{reason}" required/></p>
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

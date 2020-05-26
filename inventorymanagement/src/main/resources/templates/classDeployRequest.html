@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Deploy Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Deploy Inventory by Serial Number</h1>
+<form action="#" th:action="@{/class/deploy}" th:object="${deployDao}" method="post">
+    <p> Class: <input type="text" th:field="*{className}" required/></p>
+    <p> Inventory Serial Number: <input type="text" th:field="*{serialNumber}" required/></p>
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

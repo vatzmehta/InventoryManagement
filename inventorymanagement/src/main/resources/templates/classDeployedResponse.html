@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+    </style>
+    <title>Deployed Inventory by Class</title>
+</head>
+<a href="/">Home</a>
+<h1>Deployment Status</h1>
+<div>
+    <a href="/class/deploy">Deploy Inventory</a>
+</div>
+<table>
+    <tr>
+        <th>Class</th>
+        <th>Inventory id</th>
+        <th>Deployed by</th>
+        <th>Serial Number</th>
+        <th>Inventory Type</th>
+        <th>Purchase Date</th>
+        <th>Warranty till</th>
+        <th>deprecated value</th>
+        <th>Status</th>
+        <th>Purchase request ID</th>
+        <th>Invoice</th>
+        <th></th>
+    </tr>
+    <div th:each="i : *{all}">
+        <tr>
+            <td><p th:text="${i.className}" /></td>
+            <td><p th:text="${i.inventory.id}" /></td>
+            <td><p th:text="${i.inventory.userName}" /></td>
+            <td><p th:text="${i.inventory.serialNumber}" /></td>
+            <td><p th:text="${i.inventory.inventoryType}" /></td>
+            <td><p th:text="${i.inventory.purchaseDate}" /></td>
+            <td><p th:text="${i.inventory.warrantyTill}" /></td>
+            <td><p th:text="${i.inventory.depricatedValue}" /></td>
+            <td><p th:text="${i.inventory.status}" /></td>
+            <td><p th:text="${i.inventory.purchaseRequestId}"></p></td>
+            <td><a th:href="'/file/download/' + ${i.inventory.invoicesId}">Download invoice</a></td>
+        </tr>
+    </div>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Update Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h2>Update Inventory by ID</h2>
+<form method="post" th:action="@{/inventory/update}" enctype="multipart/form-data"  th:object="${inventoryDao}">
+    <p>Id:  <input type="number" th:field="*{id}" required/></p>
+    <p><b>Only fill the values (from the below) that needs to be updated, Leave the rest blank!</b></p>
+<!--    <p> SerialNumber: <input type="text" th:field="*{serialNumber}" /></p>-->
+    <p> Inventory Type id: <input type="number" th:field="*{inventoryTypeId}" /></p>
+    <p> Price: <input type="number" min = "0" step="0.001" th:field="*{depricatedValue}" /></p>
+    <!--    <p> invoicesId: <input type="text" th:field="*{invoicesId}" /></p>-->
+    <p> Status Id: <input type="number" th:field="*{statusId}" /></p>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>

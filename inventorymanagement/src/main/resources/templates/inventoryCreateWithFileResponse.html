@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Added to Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Success</h1>
+<p th:text="'id = '+ ${inventoryDao.id}" />
+<a href="/inventory/create/withf">Submit another</a>
+<a href="/inventory/getAll">Get All</a>
+</body>
+</html>

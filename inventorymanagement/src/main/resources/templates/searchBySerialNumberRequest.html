@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<script language="JavaScript" type="text/javascript">
+    function buttonClick(){
+    var url = '/inventory/searchBySerialNumber' + document.getElementById("inputURL").value;
+    window.location = url;
+    }
+</script>
+<head>
+       <title>Search By Serial Number</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Search By Serial Number</h1>
+<form>
+<input type="text" id="inputURL" name="inputURL" value="">
+<br>
+<input type="button" value="click" onclick="buttonClick()" />
+</form>
+</body>
+</html>

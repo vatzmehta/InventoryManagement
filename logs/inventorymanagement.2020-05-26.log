@@ -1,0 +1,103 @@
+2020-05-26 14:47:34,101 [INFO] from com.engineersbasket.inventorymanagement.InventorymanagementApplication in restartedMain - Starting InventorymanagementApplication on NIVEA-PC with PID 2468 (C:\Users\NIVEA\Downloads\inventorymanagement\inventorymanagement\target\classes started by NIVEA in C:\Users\NIVEA\Downloads\inventorymanagement)
+2020-05-26 14:47:34,101 [INFO] from com.engineersbasket.inventorymanagement.InventorymanagementApplication in restartedMain - No active profile set, falling back to default profiles: default
+2020-05-26 14:47:34,335 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor in restartedMain - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-26 14:47:34,335 [INFO] from org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor in restartedMain - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-26 14:47:38,862 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-05-26 14:47:39,358 [INFO] from org.springframework.data.repository.config.RepositoryConfigurationDelegate in restartedMain - Finished Spring Data repository scanning in 386ms. Found 12 JPA repository interfaces.
+2020-05-26 14:47:45,021 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer in restartedMain - Tomcat initialized with port(s): 9191 (http)
+2020-05-26 14:47:45,280 [INFO] from org.apache.catalina.core.StandardService in restartedMain - Starting service [Tomcat]
+2020-05-26 14:47:45,280 [INFO] from org.apache.catalina.core.StandardEngine in restartedMain - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-26 14:47:47,338 [INFO] from org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] in restartedMain - Initializing Spring embedded WebApplicationContext
+2020-05-26 14:47:47,338 [INFO] from org.springframework.web.context.ContextLoader in restartedMain - Root WebApplicationContext: initialization completed in 13003 ms
+2020-05-26 14:47:49,368 [INFO] from org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor in restartedMain - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-26 14:47:49,695 [INFO] from org.hibernate.jpa.internal.util.LogHelper in task-1 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-26 14:47:49,984 [INFO] from org.hibernate.Version in task-1 - HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-26 14:47:50,753 [WARN] from org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration in restartedMain - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-26 14:47:51,085 [INFO] from org.hibernate.annotations.common.Version in task-1 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-26 14:47:52,816 [INFO] from com.zaxxer.hikari.HikariDataSource in task-1 - HikariPool-1 - Starting...
+2020-05-26 14:47:53,472 [INFO] from org.springframework.security.web.DefaultSecurityFilterChain in restartedMain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@279de95, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ce957c, org.springframework.security.web.header.HeaderWriterFilter@5fa71f7e, org.springframework.security.web.csrf.CsrfFilter@3b747c6d, org.springframework.security.web.authentication.logout.LogoutFilter@2b19358d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ed69aa8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2c22912b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1ca5eb31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b5a1265, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@340d9fc3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@622b9b77, org.springframework.security.web.session.SessionManagementFilter@4988b567, org.springframework.security.web.access.ExceptionTranslationFilter@5686321, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a78a33]
+2020-05-26 14:47:55,661 [INFO] from com.zaxxer.hikari.HikariDataSource in task-1 - HikariPool-1 - Start completed.
+2020-05-26 14:48:01,235 [INFO] from org.hibernate.dialect.Dialect in task-1 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-26 14:48:16,241 [INFO] from org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator in task-1 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-26 14:48:16,287 [INFO] from org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean in task-1 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-26 14:48:18,348 [INFO] from org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping in restartedMain - Adding welcome page: class path resource [static/index.html]
+2020-05-26 14:48:19,259 [INFO] from org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer in restartedMain - LiveReload server is running on port 35729
+2020-05-26 14:48:19,429 [INFO] from org.springframework.boot.web.embedded.tomcat.TomcatWebServer in restartedMain - Tomcat started on port(s): 9191 (http) with context path ''
+2020-05-26 14:48:19,432 [INFO] from org.springframework.data.repository.config.DeferredRepositoryInitializationListener in restartedMain - Triggering deferred initialization of Spring Data repositories…
+2020-05-26 14:48:20,907 [INFO] from org.springframework.data.repository.config.DeferredRepositoryInitializationListener in restartedMain - Spring Data repositories initialized!
+2020-05-26 14:48:20,968 [INFO] from com.engineersbasket.inventorymanagement.InventorymanagementApplication in restartedMain - Started InventorymanagementApplication in 52.72 seconds (JVM running for 60.473)
+2020-05-26 14:48:27,444 [INFO] from org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] in http-nio-192.168.1.100-9191-exec-1 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-26 14:48:27,445 [INFO] from org.springframework.web.servlet.DispatcherServlet in http-nio-192.168.1.100-9191-exec-1 - Initializing Servlet 'dispatcherServlet'
+2020-05-26 14:48:27,480 [INFO] from org.springframework.web.servlet.DispatcherServlet in http-nio-192.168.1.100-9191-exec-1 - Completed initialization in 35 ms
+2020-05-26 14:49:26,243 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryTypeResource in http-nio-192.168.1.100-9191-exec-6 - get all inventory type requested
+2020-05-26 14:49:27,415 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryTypeResource in http-nio-192.168.1.100-9191-exec-6 - get all inventory type retrieved successfully
+2020-05-26 14:49:41,714 [INFO] from com.engineersbasket.inventorymanagement.resource.ClassResource in http-nio-192.168.1.100-9191-exec-10 - All classes retrieval successful
+2020-05-26 14:50:07,914 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-2 - request create requested with inventory type 3 for class II_RED by user vatz
+2020-05-26 14:50:08,636 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-2 - adding details to user profile
+2020-05-26 14:50:08,697 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-2 - user created new request for inventory
+2020-05-26 14:50:08,993 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-2 - request create successful with id 5
+2020-05-26 14:50:18,789 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-3 - All Non approved request retrieval successful
+2020-05-26 14:50:49,289 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-4 - purchase approve request for request id 5 and quantity 3 by user vatz
+2020-05-26 14:50:49,561 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserNotificationServiceImpl in http-nio-192.168.1.100-9191-exec-4 - Notification Added
+2020-05-26 14:50:49,652 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-4 - adding details to user profile
+2020-05-26 14:50:49,658 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-4 - user approved a request
+2020-05-26 14:50:49,718 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-4 - purchase approve successful with id 5
+2020-05-26 14:50:54,782 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-3 - Get all purchase order retrieval successful
+2020-05-26 14:52:20,617 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-10 - create inventory requested with serial number BENCH06 by user vatz
+2020-05-26 14:52:22,839 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-10 - adding details to user profile
+2020-05-26 14:52:22,844 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-10 - user created new inventory
+2020-05-26 14:52:23,050 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserNotificationServiceImpl in http-nio-192.168.1.100-9191-exec-10 - Notification Added
+2020-05-26 14:52:23,172 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-10 - Inventory successfully created
+2020-05-26 14:52:28,417 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-2 - create inventory requested with serial number BENCH07 by user vatz
+2020-05-26 14:52:29,126 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-2 - adding details to user profile
+2020-05-26 14:52:29,152 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-2 - user created new inventory
+2020-05-26 14:52:29,482 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserNotificationServiceImpl in http-nio-192.168.1.100-9191-exec-2 - Notification Added
+2020-05-26 14:52:29,530 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-2 - Inventory successfully created
+2020-05-26 14:52:34,436 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-8 - create inventory requested with serial number BENCH08 by user vatz
+2020-05-26 14:52:35,467 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-8 - adding details to user profile
+2020-05-26 14:52:35,511 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-8 - user created new inventory
+2020-05-26 14:52:35,715 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserNotificationServiceImpl in http-nio-192.168.1.100-9191-exec-8 - Notification Added
+2020-05-26 14:52:35,846 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-8 - Inventory successfully created
+2020-05-26 14:52:44,401 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-7 - Get all purchase order retrieval successful
+2020-05-26 14:53:10,119 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-3 - search by payment status requested with status AWAITING_APPROVAL
+2020-05-26 14:53:10,399 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-3 - search by payment status successfully retrieved
+2020-05-26 14:53:42,032 [INFO] from com.engineersbasket.inventorymanagement.resource.FileController in http-nio-192.168.1.100-9191-exec-9 - file download with id 10 requested by user vatz
+2020-05-26 14:53:42,077 [INFO] from com.engineersbasket.inventorymanagement.resource.FileController in http-nio-192.168.1.100-9191-exec-9 - file retrieved successfully
+2020-05-26 14:54:26,485 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-1 - update inventory payment method requested with purchase id 5 and status id vatz by user {}
+2020-05-26 14:54:26,806 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-1 - update inventory payment method successful
+2020-05-26 14:54:33,386 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-6 - update inventory payment status requested with purchase id 5 and status id vatz by user {}
+2020-05-26 14:54:33,514 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-6 - update inventory payment status successful
+2020-05-26 14:54:40,296 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-10 - search by payment status requested with status AWAITING_APPROVAL
+2020-05-26 14:54:40,302 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-10 - search by payment status successfully retrieved
+2020-05-26 14:54:46,835 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-1 - search by payment status requested with status 
+2020-05-26 14:54:46,882 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-1 - search by payment status successfully retrieved
+2020-05-26 14:55:14,510 [INFO] from com.engineersbasket.inventorymanagement.resource.PaymentResource in http-nio-192.168.1.100-9191-exec-10 - get all payment method requested
+2020-05-26 14:55:14,523 [INFO] from com.engineersbasket.inventorymanagement.resource.PaymentResource in http-nio-192.168.1.100-9191-exec-10 - get all payment method successfully retrieved
+2020-05-26 14:55:16,026 [INFO] from com.engineersbasket.inventorymanagement.resource.PaymentResource in http-nio-192.168.1.100-9191-exec-4 - get all payment method requested
+2020-05-26 14:55:16,039 [INFO] from com.engineersbasket.inventorymanagement.resource.PaymentResource in http-nio-192.168.1.100-9191-exec-4 - get all payment method successfully retrieved
+2020-05-26 14:55:38,661 [INFO] from com.engineersbasket.inventorymanagement.resource.UserResource in http-nio-192.168.1.100-9191-exec-1 - get all user notifications
+2020-05-26 14:55:38,765 [INFO] from com.engineersbasket.inventorymanagement.resource.UserResource in http-nio-192.168.1.100-9191-exec-1 - get all users notification successfully
+2020-05-26 14:55:57,877 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-4 - search by serialnumber requested with serialnumber BENCH06
+2020-05-26 14:55:57,920 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-4 - successfully retrieved by serial number
+2020-05-26 14:56:38,245 [INFO] from com.engineersbasket.inventorymanagement.resource.UserResource in http-nio-192.168.1.100-9191-exec-4 - create user requested with username user10 by user vatz
+2020-05-26 14:56:38,393 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-4 - adding details to user profile
+2020-05-26 14:56:38,398 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-4 - user created new user
+2020-05-26 14:56:38,490 [INFO] from com.engineersbasket.inventorymanagement.resource.UserResource in http-nio-192.168.1.100-9191-exec-4 - create user successful
+2020-05-26 14:57:04,165 [INFO] from com.engineersbasket.inventorymanagement.resource.ClassResource in http-nio-192.168.1.100-9191-exec-6 - Deploying BENCH06 to class II_RED by user user10
+2020-05-26 14:57:04,200 [INFO] from com.engineersbasket.inventorymanagement.service.impl.ClassServiceImpl in http-nio-192.168.1.100-9191-exec-6 - Inventory is not assigned to any other class
+2020-05-26 14:57:04,833 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-6 - adding details to user profile
+2020-05-26 14:57:04,895 [ERROR] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-6 - unable to retrieve user details of user com.engineersbasket.inventorymanagement.db.User@37274ff3
+2020-05-26 14:57:04,896 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-6 - creating a user
+2020-05-26 14:57:04,896 [INFO] from com.engineersbasket.inventorymanagement.service.impl.UserDetailsServiceImpl in http-nio-192.168.1.100-9191-exec-6 - user deployed an inventory
+2020-05-26 14:57:05,134 [INFO] from com.engineersbasket.inventorymanagement.resource.ClassResource in http-nio-192.168.1.100-9191-exec-6 - Successfully deployed BENCH06
+2020-05-26 14:57:06,549 [INFO] from com.engineersbasket.inventorymanagement.resource.ClassResource in http-nio-192.168.1.100-9191-exec-5 - Get all deployed inventory requested
+2020-05-26 14:57:06,790 [INFO] from com.engineersbasket.inventorymanagement.resource.ClassResource in http-nio-192.168.1.100-9191-exec-5 - Successfully retrieved all the deployed inventory
+2020-05-26 14:58:14,239 [INFO] from com.engineersbasket.inventorymanagement.resource.StatusResource in http-nio-192.168.1.100-9191-exec-10 - get all status requested
+2020-05-26 14:58:14,249 [INFO] from com.engineersbasket.inventorymanagement.resource.StatusResource in http-nio-192.168.1.100-9191-exec-10 - get all status successfully retrieved
+2020-05-26 14:58:44,089 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-2 - update inventory status requested with serialnumber bench06 and status id 3 by user user10
+2020-05-26 14:58:44,214 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-2 - update inventory status successful
+2020-05-26 14:58:56,860 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-5 - search by serialnumber requested with serialnumber bench06
+2020-05-26 14:58:56,889 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-5 - successfully retrieved by serial number
+2020-05-26 14:59:12,815 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-3 - search by status requested with status DEPLOYED
+2020-05-26 14:59:12,858 [INFO] from com.engineersbasket.inventorymanagement.resource.InventoryController in http-nio-192.168.1.100-9191-exec-3 - search by status successfully retrieved
+2020-05-26 15:00:38,353 [INFO] from com.engineersbasket.inventorymanagement.dao.RequestNewInventoryDao in http-nio-192.168.1.100-9191-exec-1 - Get all purchase order retrieval successful

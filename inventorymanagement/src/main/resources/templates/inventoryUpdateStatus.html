@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Update Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h2>Update Status of Inventory by Serial Number</h2>
+<form method="post" th:action="@{/inventory/updateStatus}" enctype="multipart/form-data"  th:object="${inventoryDao}">
+    <p> SerialNumber: <input type="text" th:field="*{serialNumber}" required/></p>
+    <p> Status Id: <input type="number" th:field="*{statusId}" /></p>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>

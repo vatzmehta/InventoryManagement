@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<a href="/">Home</a>
+<h1>Inventory</h1>
+<div>
+    <a href="/inventory/create/withf">Add</a>
+</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Quantity</th>
+        <th>Purchase request ID</th>
+        <th>Payment Status</th>
+        <th>Payment Method</th>
+        <th>Payment Assignee</th>
+        <th>Retained by</th>
+        <th>SerialNumber</th>
+        <th>inventoryType</th>
+        <th>purchaseDate</th>
+        <th>warrantyTill</th>
+        <th>Total Price</th>
+        <th>invoicesId</th>
+        <th>Status</th>
+        <th>Download Invoice</th>
+        <th>Update Payment Status</th>
+        <th>Update Payment Method</th>
+    </tr>
+    <div th:each="entry : *{entries}">
+        <tr>
+            <td><p th:text = "${entry.id}"></p></td>
+            <td><p th:text = "${entry.quantity}"></p></td>
+            <td><p th:text="${entry.purchaseRequestId}"></p></td>
+            <td><p th:text="${entry.paymentStatus}"></p></td>
+            <td><p th:text="${entry.paymentMethod}"></p></td>
+            <td><p th:text="${entry.assignee}"></p></td>
+            <td><p th:text="${entry.userName}"></p></td>
+            <td><p th:text="${entry.serialNumber}"></p></td>
+            <td><p th:text="${entry.inventoryType}"></p></td>
+            <td><p th:text="${entry.purchaseDate}"></p></td>
+            <td><p th:text="${entry.warrantyTill}"></p></td>
+            <td><p th:text="${entry.depricatedValue}"></p></td>
+            <td><p th:text="${entry.invoicesId}"></p></td>
+            <td><p th:text="${entry.status}"></p></td>
+            <td><a th:href="'/file/download/' + ${entry.invoicesId}">Download invoice</a></td>
+            <td><a th:href="'/inventory/update/paymentStatus?purchaseId=' + ${entry.purchaseRequestId}">Update Payment Status</a></td>
+            <td><a th:href="'/inventory/update/paymentMethod?purchaseId=' + ${entry.purchaseRequestId}">Update Payment Method</a></td>
+        </tr>
+    </div>
+</table>
+
+</body>
+</html>

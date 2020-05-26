@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Payment Method Created</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Success</h1>
+<p th:text="'id = '+ ${paymentMethodDao.id}" />
+<p th:text="'name = '+ ${paymentMethodDao.name}" />
+<a href="/payment/method/create">Submit another</a>
+<a href="/payment/method/getAll">Get All</a>
+</body>
+</html>

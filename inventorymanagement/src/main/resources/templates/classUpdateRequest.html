@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Update Class</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Update Class</h1>
+<form action="#" th:action="@{/class/update}" th:object="${classDao}" method="post">
+    <p> Id: <input type="number" id="id" th:field="*{id}" required/></p>
+    <p> ClassName: <input type="text" th:field="*{className}" required/></p>
+    <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

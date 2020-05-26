@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<script language="JavaScript" type="text/javascript">
+    function approve(){
+    var url = '/request/approve?id=' + document.getElementById("id").value + '&quantity=' + document.getElementById("quantity").value;
+    window.location = url;
+    }
+    function defaultKeys(){
+        let url = window.location.href;
+        let reg = new RegExp( '[?&]' + 'id' + '=([^&#]*)','i');
+        let queryString = reg.exec(url);
+        document.getElementById("id").defaultValue= queryString ? queryString[1] : null;
+    }
+    </script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Approve</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Approve Request by request id</h1>
+<form>
+    <p>Request id = <input type="number" id="id" name="Id" value="" onclick="defaultKeys()" required></p>
+    <p>Approve Quantity = <input type="number" id="quantity" name="Quantity" value="" required></p>
+    <b>Note: use <i>0</i> or <i>-1</i> as approve quantity to deny request </b>
+    <br>
+    <input type="button" value="Approve" onclick="approve()" />
+</form>
+</body>
+</html>

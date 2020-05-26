@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Add Inventory Type</title>
+</head>
+<a href="/">Home</a>
+<body>
+<h1>Add Inventory Type</h1>
+<form action="#" th:action="@{/inventory/type/create}" th:object="${inventoryTypeDao}" method="post">
+        <p> Name: <input type="text" th:field="*{name}" required/></p>
+        <p><input type="submit" value="Submit"/><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
+<!--<form action="#" th:action="@{/adduser}" th:object="${user}" method="post" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<!--        <input type="text" th:field="*{name}">-->
+<!--</form>-->

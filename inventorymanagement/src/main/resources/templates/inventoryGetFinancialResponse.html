@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Financial</title>
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<a href="/">Home</a>
+<h1>Financial</h1>
+<table>
+    <tr>
+        <th>Inventory Type</th>
+        <th>Amount</th>
+    </tr>
+    <div th:each="entry : *{entries}">
+        <tr>
+            <td><p th:text = "${entry.inventoryType}"></p></td>
+            <td><p th:text = "${entry.amount}"></p></td>
+        </tr>
+    </div>
+</table>
+
+</body>
+</html>

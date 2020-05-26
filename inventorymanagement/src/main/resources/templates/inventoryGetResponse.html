@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<a href="/">Home</a>
+<h1>Inventory</h1>
+<div>
+    <a href="/inventory/create/withf">Add</a>
+</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>SerialNumber</th>
+        <th>inventoryType</th>
+        <th>Retained by</th>
+        <th>Deployed Class</th>
+        <th>Status</th>
+        <th>purchaseDate</th>
+        <th>warrantyTill</th>
+        <th>Price</th>
+        <th>invoicesId</th>
+        <th>Purchase Request Id</th>
+        <th>Payment Status</th>
+        <th>Payment Method</th>
+        <th>Payment Assignee</th>
+        <th>Download Invoice</th>
+    </tr>
+        <tr>
+            <td><p th:text = "${i.id}"></p></td>
+            <td><p th:text="${i.serialNumber}"></p></td>
+            <td><p th:text="${i.inventoryType}"></p></td>
+            <td><p th:text = "${i.userName}"></p></td>
+            <td><p th:text="${i.className}"></p></td>
+            <td><p th:text="${i.status}"></p></td>
+            <td><p th:text="${i.purchaseDate}"></p></td>
+            <td><p th:text="${i.warrantyTill}"></p></td>
+            <td><p th:text="${i.depricatedValue}"></p></td>
+            <td><p th:text="${i.invoicesId}"></p></td>
+            <td><p th:text="${i.purchaseRequestId}"></p></td>
+            <td><p th:text="${i.paymentStatus}"></p></td>
+            <td><p th:text="${i.paymentMethod}"></p></td>
+            <td><p th:text="${i.assignee}"></p></td>
+            <td><a th:href="'/file/download/' + ${i.invoicesId}">Download invoice</a></td>
+        </tr>
+</table>
+
+</body>
+</html>

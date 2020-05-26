@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Welcome</title>
+    <h2>Inventory Management</h2>
+</head>
+<body>
+<hr/>
+<h3 th:text="${hello}"/>
+<hr/>
+<h3>Class</h3>
+<a href="/class/create">Create Class</a> <br/>
+<a href="/class/update">Update Class</a> <br/>
+<a href="/class/getAll">Get All</a> <br/>
+<a href="/class/deploy">Deploy Inventory</a> <br/>
+<a href="/class/deploy/getAll">All Deployed Status</a><br/>
+<a href="/class/deployed">Deployed Inventory by Class</a>
+<br/>
+<hr/>
+<h3>Inventory</h3>
+<a href="/inventory/create/withf">Add to inventory</a><br/>
+<a href="/inventory/update">Update Inventory By Id</a><br/>
+<a href="/inventory/update/paymentMethod">Update Inventory Payment Method</a><br/>
+<a href="/inventory/update/paymentStatus">Update Inventory Payment Status</a><br/>
+<a href="/inventory/getAll">Get All Inventory</a><br/>
+<a href="/inventory/searchByPaymentStatus?inputURL=">Get All Inventory with Payment Status</a><br/>
+<a href="/inventory/updateStatus">Change Status of Inventory By Serial Number</a><br/>
+<a href="/inventory">Search</a><br/>
+<hr/>
+<h3>User</h3>
+<a href="/user/create">Create User</a><br/>
+<a href="/user/update">Change Password</a><br/>
+<a href="/user/enable"> Activate/Deactivate User</a><br/>
+<a href="/user/getAll">Get All Users</a><br/>
+<a href="/user/notifications/getAll">Get Notifications</a>
+<hr/>
+<h3>Inventory Types</h3>
+<a href="/inventory/type/create">Create Inventory type</a><br/>
+<a href="/inventory/type/update">Update Inventory type</a><br/>
+<a href="/inventory/type/getAll">Get All</a><br/>
+<hr/>
+<h3>Status</h3>
+<a href="/status/create">Create Status</a><br/>
+<a href="/status/update">Update Status</a><br/>
+<a href="/status/getAll">Get All</a><br/>
+<hr/>
+<h3>Request and Approvals</h3>
+<a href="/request/create">Request an inventory</a><br/>
+<a href="/request/getAll">Get All requests</a><br/>
+<a href="/request/approveRequest">Approve request</a><br/>
+<a href="/request/approved/getAll">Get All approved purchase request</a><br/>
+<a href="/request/requiringApproval/getAll">Pending Approval</a><br/>
+<a href="/request/purchaseOrder">Purchase Order</a><br/>
+<hr/>
+<h3>Payments</h3>
+<a href="/payment/method/create">Create Payment Method</a><br/>
+<a href="/payment/method/update">Update Payment Method</a><br/>
+<a href="/payment/status/create">Create Payment Status</a><br/>
+<a href="/payment/status/update">Update Payment Status</a><br/>
+<a href="/payment/method/getAll">Get All Payment Method</a><br/>
+<a href="/payment/status/getAll">Get All Payment Status</a><br/>
+<hr/>
+<h3>Financial</h3>
+<a href="inventory/financial/get">See Financial</a><br/>
+<hr/>
+<h3>Delete</h3>
+<a href="/deleteById">Delete</a><br/>
+<!--<h3>Files</h3>-->
+<!--<form method="post" th:action="@{/file/uploadFile}" enctype="multipart/form-data">-->
+<!--    <div class="form-group">-->
+<!--        <input type="file" name="file" class="form-control-file">-->
+<!--    </div>-->
+<!--    <button type="submit" class="btn btn-primary">Upload File</button>-->
+<!--</form>-->
+<hr/>
+<h4>Logout</h4>
+<a href="/logout">Logout</a>
+<hr/>
+</body>

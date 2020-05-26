@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+    </style>
+    <title>Get all Classes</title>
+</head>
+<a href="/">Home</a>
+<h1>Classes</h1>
+<div>
+    <a href="/class/create">Create Class</a>
+</div>
+<table>
+    <tr>
+        <th>id</th>
+        <th>Class</th>
+    </tr>
+    <div th:each="classDao : *{classes}">
+        <tr>
+            <td><p th:text="${classDao.id}" /></td>
+            <td><p th:text="${classDao.className}" /></td>
+        </tr>
+    </div>
+</table>
+
+</body>
+</html>

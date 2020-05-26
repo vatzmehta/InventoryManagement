@@ -1,0 +1,80 @@
+CHECK INV - 33 (half done) --
+
+unread notification
+payment [waiting, done, ..]
+pay by []
+repair
+gnr
+configuration
+
+update payemnt status and method
+
+payment approval and status by purchase id;
+defaults
+--------------------
+class 7
+itype 19
+status 8
+RI 27
+PId 33
+
+
+
+update status response [blank] -- Not working (http://localhost:8080/inventory/update) serialNumber
+
+Inventory Type done
+Status done
+User done
+iNVENTROY DONE
+delete class pending
+request and approval done
+delete with dependencies pending
+http://localhost:8080/request/getAll
+http://localhost:8080/request/approveRequest
+
+
+7,15,22,
+Bugs
+1. Create Inventory Type Response --DONE
+3. Update status duplicate error page message --done
+4. Update Inventory types duplicate error page message --(could be better)
+5. create user response --DONE
+6. activate deactivate user update invalid value (400) http://localhost:8080/user/enable --done
+8. search by serial number null error --done
+9. search by id null error -- done
+10. search by status null error --done
+11. class create 500 http://localhost:8080/class/create --done
+12. deployed status 500 --done
+13. INVENTORY TYPE RESOURCE NOT FOUND DEPLOY USING SERIAL NUMBER --done
+14. approved request should not be displayed in requests. [pending requests]--done
+
+2. Inventory types are not saved in Uppercas
+7. update inventory null pointer exception when giving only depreciated value --done
+15. approving more quantity than asked error message --done
+16. delete authorization, requests authorization (pending request)
+17. Generate doc
+18. Deploy some items to a class and then deploy one inventory to another class and all disappears --DONE
+UsernameNotFoundException MESSAGE ADD USER --done
+INVALID INVENTORY TYPE AND STATUS ERROR RESPONSE INVENTORY CREATE --done
+update class with same name error message --DONE SQLIntegrityConstraintViolationException --dome
+status UPDATE response resource not foudn --done
+update inventory duplicate name --doone
+CHANGE DEPRICATED VALUE TO VALUE --done
+UPDATE INVENTORY INVALID INVENTORY TYPE --done
+DEPRICATED VALUE -1 (added min in html) -- done
+add to inventory, invalid inventory type error message --done
+ADD USER CONFIRM PASSWORD --Done
+
+QUANTITY -2 IN REQUEST INVENTORY ytd -- done
+approve quantity in approve request --done
+approve request with non exi id -- EntityNotFoundException -- done
+INVENTRY BOUGHT BETWEEN (DATE AND DATE)--done
+FInancials --done
+DEPLOYED INVENTORY BY CLASS --done
+CHECK USER5 WITH NO PASSWORD --need to make password mandatory --done
+adding to inventory error message when ap quantity -- done
+delete by id in every resource --done
+invalid purchase request id - add to inventory error message --done
+
+get all by payment change to "" --done
+bug required quantity when inventory type is different --done

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+    <style>
+        table, th, td{
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<a href="/">Home</a>
+<h1>Inventory</h1>
+<div>
+    <a href="/inventory/create/withf">Add</a>
+</div>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>UserName</th>
+        <th>SerialNumber</th>
+        <th>inventoryType</th>
+        <th>purchaseDate</th>
+        <th>warrantyTill</th>
+        <th>depricatedValue</th>
+        <th>invoicesId</th>
+        <th>status</th>
+        <th>Purchase request ID</th>
+        <th>Download Invoice</th>
+    </tr>
+<div th:each="entry : *{entries}">
+    <tr>
+    <td><p th:text = "${entry.id}"></p></td>
+        <td><p th:text = "${entry.userName}"></p></td>
+        <td><p th:text="${entry.serialNumber}"></p></td>
+        <td><p th:text="${entry.inventoryType}"></p></td>
+        <td><p th:text="${entry.purchaseDate}"></p></td>
+        <td><p th:text="${entry.warrantyTill}"></p></td>
+        <td><p th:text="${entry.depricatedValue}"></p></td>
+        <td><p th:text="${entry.invoicesId}"></p></td>
+        <td><p th:text="${entry.status}"></p></td>
+        <td><p th:text="${entry.purchaseRequestId}"></p></td>
+        <td><a th:href="'/file/download/' + ${entry.invoicesId}">Download invoice</a></td>
+    </tr>
+</div>
+</table>
+
+</body>
+</html>

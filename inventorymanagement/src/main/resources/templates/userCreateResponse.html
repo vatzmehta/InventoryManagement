@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>User Created</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>User Created</h1>
+<p th:text="'id = '+ ${userDao.id}" />
+<p th:text="'Username = '+ ${userDao.userName}" />
+<p th:text="'Role = '+ ${userDao.role}" />
+<p th:text ="'Active = '+ ${userDao.isEnabled}" />
+<a href="/user/create">Submit another</a>
+<a href="/user/getAll">Get All</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Created Class</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Success</h1>
+<p th:text="'id = '+ ${classDao.id}" />
+<p th:text="'name = '+ ${classDao.className}" />
+<a href="/class/create">Submit another</a>
+<a href="/class/getAll">Get All</a>
+</body>
+</html>

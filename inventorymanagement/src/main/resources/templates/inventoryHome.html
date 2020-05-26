@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<script language="JavaScript" type="text/javascript">
+    function searchBySerialNumber(){
+    var url = '/inventory/searchBySerialNumber?inputURL=' + document.getElementById("inputURL").value;
+    window.location = url;
+    }
+    function searchById(){
+    var url = '/inventory/searchById?inputURL=' + document.getElementById("inputURL").value;
+    window.location = url;
+    }
+    function searchByStatus(){
+    var url = '/inventory/searchByStatus?inputURL=' + document.getElementById("inputURL").value;
+    window.location = url;
+    }
+    function searchByPaymentStatus(){
+    var url = '/inventory/searchByPaymentStatus?inputURL=' + document.getElementById("inputURL").value;
+    window.location = url;
+    }
+</script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Inventory</title>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Search</h1>
+<form>
+    <input type="text" id="inputURL" name="inputURL" value="" >
+    <br>
+    <input type="button" value="SearchBySerialNumber" onclick="searchBySerialNumber()" />
+    <input type="button" value="SearchByID" onclick="searchById()" />
+    <input type="button" value="SearchByStatus" onclick="searchByStatus()" />
+    <input type="button" value="SearchByPaymentStatus" onclick="searchByPaymentStatus()" />
+
+</form>
+</body>
+</html>
+<!--<h2>Sear</h2>-->
+<!--<a href="/class/create">Create Class</a>-->
+<!--<a href="/class/getAll">Get All</a>-->
+<!--<a href="/class/deploy">Deploy Inventory</a>-->
+<!--<a href="/class/deploy/getAll">Deployed Status</a>-->
+<!--<h2>Inventory</h2>-->
+<!--<a href="/inventory/create/withf">Add to inventory</a>-->
+<!--<a href="/inventory/getAll">Get All Inventory</a>-->
+<!--<a href="/inventory/searchBySerialNumber">Search By Serial Number</a>-->
+<!--<h2>User</h2>-->
+<!--<a href="/user/create">Create User</a>-->
+<!--<a href="/user/getAll">Get All Users</a>-->
+<!--<h2>Manufacturer</h2>-->
+<!--<a href="/manufacturer/create">Create Manufacturer</a>-->
+<!--<a href="/manufacturer/getAll">Get All</a>-->
+<!--<h2>Status</h2>-->
+<!--<a href="/status/create">Create Status</a>-->
+<!--<a href="/status/getAll">Get All</a>-->
+<!--<h2>Files</h2>-->
+<!--<form method="post" th:action="@{/file/uploadFile}" enctype="multipart/form-data">-->
+<!--    <div class="form-group">-->
+<!--        <input type="file" name="file" class="form-control-file">-->
+<!--    </div>-->
+<!--    <button type="submit" class="btn btn-primary">Upload File</button>-->
+<!--</form>-->
+<!--<h3>Logout</h3>-->
+<!--<a href="/logout">Logout</a>-->
+<!--</body>-->
